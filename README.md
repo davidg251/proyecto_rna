@@ -1,5 +1,6 @@
-#Proyecto Final Redes Neuronales
+#PROYECTO FINAL REDES NEURONALES
 
+#Descripcion
 en esta pequeño proyecto se busca hacer uso
 de la red neuronal backpropagation para el reconocimiento
 de numeros desde el 0 hasta el 9, ademas de simbolos como +,-,*,/
@@ -7,12 +8,10 @@ de numeros desde el 0 hasta el 9, ademas de simbolos como +,-,*,/
 oculta y de salida, las cuales tienen 144, 50 y 4
 neuronas respectivamente.
 
-
-
 Bascicamente la aplicacion consiste de un
 "backend" y un "frontend" , el backend esta hecho en python
-hace uso de la libreria FANN escrita en C/C++ , para ello se hace
-uso de un "language binding"[1] de la libreria en python, este modulo de la
+hace uso de la libreria FANN escrita en C/C++ [1], para ello se hace
+uso de un "language binding"[2] de la libreria en python, este modulo de la
 aplicacion esta encargado de entrenar y de probar la red con un
 nuevo patron a clasificar, en el proceso de entrenamiento se hace mediante un
 archivo de texto donde esta cada uno de los patrones a aprender y su salida
@@ -25,3 +24,7 @@ un objeto canvas en el cual puedo dibujar un numero , y enviarlo a la red para q
 lo clasifique , antes que esto pase se hace una normalizacion de los datos que consiste
 en pixelar(reducir) la imagen resultante y extraer de ahi el patron poniendo 1 donde sea
 negro y -1 donde no lo sea.
+
+#Referencias
+[1] http://leenissen.dk/fann/wp/
+[2] https://github.com/FutureLinkCorporation/fann2

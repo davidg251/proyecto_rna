@@ -4,7 +4,7 @@ def entrenar():
 
     connection_rate = 1
     learning_rate = 0.7
-    num_input = 144
+    num_input = 400
     num_hidden = 50
     num_output = 5
 
@@ -26,6 +26,4 @@ def probar(array):
 
     ann = libfann.neural_net()
     ann.create_from_file("red.net")
-    print array
-    print 'OK'
     print ann.run(array)
