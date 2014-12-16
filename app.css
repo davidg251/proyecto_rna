@@ -1,0 +1,21 @@
+body
+{
+zoom:100%;
+}
+.btn
+{
+	background: #eee;
+	border-radius: 5px;
+	color:#aaa;
+	padding: 3px;
+}
+canvas
+{
+	border: solid 1px #000;
+}
+#target
+{
+width:100px;
+
+word-break: break-all;
+}
