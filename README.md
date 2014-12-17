@@ -3,9 +3,9 @@
 #Descripcion
 en esta pequeño proyecto se busca hacer uso
 de la red neuronal backpropagation para el reconocimiento
-de numeros desde el 0 hasta el 9, ademas de simbolos como +,-,*,/
+de numeros desde el 0 hasta el 9,
  , para ello se ha modelado una red de 3 capas de entrada ,
-oculta y de salida, las cuales tienen 144, 50 y 4
+oculta y de salida, las cuales tienen 400, 50 y 4
 neuronas respectivamente.
 
 Bascicamente la aplicacion consiste de un
