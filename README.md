@@ -25,6 +25,26 @@ lo clasifique , antes que esto pase se hace una normalizacion de los datos que c
 en pixelar(reducir) la imagen resultante y extraer de ahi el patron poniendo 1 donde sea
 negro y -1 donde no lo sea.
 
+#Instalacion
+
+para poder correr la aplicacion debemos tener FANN que se descarga desde 
+http://sourceforge.net/projects/fann/files/fann/2.2.0/FANN-2.2.0-Source.zip/download
+lo descargamos, descomprimimos , vamos al directorio e instalamos la libreria mediante
+
+'''cmake -D CMAKE_INSTALL_PREFIX:PATH=/usr .'''
+ 
+ despues de esto se crea un ambiente virtual python y se instala el binding language para python 
+ de la libreria con
+
+ '''pip install fann2'''
+
+ luego de esto ya tenemos los paquetes necesarios para correr la aplicacion , vamos al directorio
+ raiz y con el comando 
+ '''python server.py'''
+la aplicacion estara corriendo localmente en el puerto 8080
+
+
+
 #Referencias
 [1] http://leenissen.dk/fann/wp/
 [2] https://github.com/FutureLinkCorporation/fann2

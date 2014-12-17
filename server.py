@@ -40,10 +40,17 @@ class Servidor(BaseHTTPServer.BaseHTTPRequestHandler):
         
         patron_html = s.data_string
         patron_prueba = json.loads(patron_html)
-
-        red.probar(patron_prueba)
-
-        #print(s.data_string) #comodiceunamigomiodebug
+        total = 0
+        r = red.probar(patron_prueba)
+        r.reverse()
+        for i in range(0,5):
+            if(r[i] > 0):
+                print i
+                print r[i]
+                total += pow(2,i)
+        print '#####patron clasificado####'        
+        print total        
+        #print(s.data_string) #cmodiceunamigomiodebug
 
 
 if __name__ == '__main__':

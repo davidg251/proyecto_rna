@@ -27,3 +27,4 @@ def probar(array):
     ann = libfann.neural_net()
     ann.create_from_file("red.net")
     print ann.run(array)
+    return ann.run(array)
